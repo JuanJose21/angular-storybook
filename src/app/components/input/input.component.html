@@ -1,0 +1,9 @@
+<input
+  class="input-field"
+  [value]="value"
+  [disabled]="isDisabled"
+  (input)="onChanges($event)"
+  (blur)="touched()"
+  [type]="type === 'password' ? (eyePass === 'icon-eye' ? type : 'text') : type"
+  [placeholder]="placeholder"
+/>
