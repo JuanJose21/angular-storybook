@@ -26,9 +26,10 @@
     </div>
 
     <app-button
-      (handleClick)="handleClick()"
       text="Enviar"
-      [isDisabled]="false"
+      [color]="'#000'"
+      [isDisabled]="true"
+      (handleClick)="handleClick()"
     ></app-button>
   </form>
 </div>

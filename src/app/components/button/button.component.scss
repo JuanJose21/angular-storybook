@@ -12,4 +12,9 @@
     background-color: rgb(29, 29, 218);
     cursor: pointer;
   }
+
+  &:disabled {
+    background-color: rgb(104, 104, 109) !important;
+    cursor: not-allowed;
+  }
 }
