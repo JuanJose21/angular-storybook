@@ -7,13 +7,9 @@ Este repositorio contiene un ejemplo de cómo integrar Storybook en una aplicaci
 - [Introducción](#introducción)
 - [Requisitos Previos](#requisitos-previos)
 - [Instalación](#instalación)
-- [Configuración de Storybook](#configuración-de-storybook)
 - [Creación de Componentes y Historias](#creación-de-componentes-y-historias)
 - [Ejecutar Storybook](#ejecutar-storybook)
 - [Verificación y Pruebas](#verificación-y-pruebas)
-- [Ejemplo de Componente](#ejemplo-de-componente)
-- [Contribuir](#contribuir)
-- [Licencia](#licencia)
 
 ## Introducción
 
@@ -91,21 +87,3 @@ npm run storybook
 
 Puedes verificar que todo funcione correctamente viendo los componentes renderizados en Storybook y ajustando sus propiedades en la sección de controles.
 
-## Ejemplo de Componente
-
-Aquí tienes un ejemplo de un componente `ButtonComponent`:
-
-```typescript
-// src/app/button/button.component.ts
-
-import { Component, Input } from '@angular/core';
-
-@Component({
-  selector: 'app-button',
-  template: `<button [disabled]="disabled">{{ text }}</button>`,
-})
-export class ButtonComponent {
-  @Input() text = 'Click me!';
-  @Input() disabled = false;
-}
-```
